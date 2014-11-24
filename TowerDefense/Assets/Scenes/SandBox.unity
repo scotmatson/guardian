@@ -189,6 +189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsSeleceted: 0
+  IsMoving: 0
   Speed: 3
 --- !u!23 &1556667763
 Renderer:
