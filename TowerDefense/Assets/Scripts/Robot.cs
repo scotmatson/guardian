@@ -12,13 +12,18 @@ public class Robot : MonoBehaviour
     public bool IsMoving;
     public float Speed;
 
+    public bool flip;
+
     private Vector3 _targetPos;
     private 
 
 	// Use this for initialization
-	void Start () {
-	
-	}
+	void Start ()
+    {
+
+        Speed = (Speed == 0) ? 3 : Speed;
+
+    }
 
     
 

@@ -20,7 +20,7 @@ public class Bullet : MonoBehaviour
 	{
 
 	    var newPos = transform.forward*Speed;
-	    transform.position = newPos;
+	    transform.position += newPos;
 
 	}
 }
