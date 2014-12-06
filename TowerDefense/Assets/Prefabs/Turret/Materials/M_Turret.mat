@@ -29,16 +29,16 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _Spec
+          name: _Illum
         second:
-          m_Texture: {fileID: 2800000, guid: 8a7ecebf551737a4c925d3dcd1d19576, type: 3}
+          m_Texture: {fileID: 2800000, guid: 430690beae7085640b4555a7985dff19, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _Illum
+          name: _Spec
         second:
-          m_Texture: {fileID: 2800000, guid: 430690beae7085640b4555a7985dff19, type: 3}
+          m_Texture: {fileID: 2800000, guid: 8a7ecebf551737a4c925d3dcd1d19576, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
     m_Floats:
@@ -52,12 +52,12 @@ Material:
         second: .717823386
       data:
         first:
-          name: _IllumMag
-        second: 1.02985072
-      data:
-        first:
           name: _Glossiness
         second: .663432837
+      data:
+        first:
+          name: _IllumMag
+        second: 1.02985072
     m_Colors:
       data:
         first:

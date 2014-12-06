@@ -36,17 +36,17 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _Illum
-        second:
-          m_Texture: {fileID: 2800000, guid: 72db5daa930950e40b50a3efd35c8847, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
           name: _Detail
         second:
           m_Texture: {fileID: 2800000, guid: 51bfd7592ea8b8b44b433e4d8a0ca114, type: 3}
           m_Scale: {x: 500, y: 100}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Illum
+        second:
+          m_Texture: {fileID: 2800000, guid: 72db5daa930950e40b50a3efd35c8847, type: 3}
+          m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
     m_Floats:
       data:
