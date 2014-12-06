@@ -14,10 +14,7 @@ public class Turret : MonoBehaviour
 	
 	// Update is called once per frame
 	void Update () {
-	
         RotateTowardsObject(_currentTarget);
-
-
 	}
 
     /// <summary>
@@ -34,11 +31,10 @@ public class Turret : MonoBehaviour
 
     }
 
-    //Rotates the Turret Towads a target 
+    //Rotates the Turret Towards a target 
     void RotateTowardsObject(GameObject target)
     {
         var targetRotation = Quaternion.LookRotation(target.transform.position - transform.position);
         transform.rotation = targetRotation;
     }
-
 }
