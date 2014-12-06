@@ -64,7 +64,7 @@ public class SpawnSystem : MonoBehaviour
             //Find a random spawn point
             FindSpawnPoint(Random.Range(spawnRadiusMin, spawnRadiusMax), Random.Range(0, 359));
             //Spawn an enemy at the random spawn point
-            Instantiate(enemyPrefab, spawnPoint, Quaternion.identity);
+            Instantiate(enemyPrefab, spawnPoint, transform.rotation);
         }
         //Tell script that we are finished spawning enemies for this round
         isSpawning = false;
