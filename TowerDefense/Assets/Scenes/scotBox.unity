@@ -1544,8 +1544,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 533129911}
+  - 114: {fileID: 533129912}
   m_Layer: 0
-  m_Name: EnemyFinish
+  m_Name: EnemyDespawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1558,11 +1559,30 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 533129910}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.263692915, y: 2.50415039, z: -4.62832928}
+  m_LocalPosition: {x: 0, y: 0, z: -8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
+--- !u!114 &533129912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 533129910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bbb23c426a1f4e81846e3526132efa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  towers: []
+  gridSize: 2
+  platforms: []
+  autoSearchForPlatform: 0
+  autoAdjstTextureToGrid: 1
+  enableTileIndicator: 1
+  retainPrefabShaderForSamples: 0
+  terrainColliderLayer: -1
 --- !u!1 &557460321
 GameObject:
   m_ObjectHideFlags: 0
@@ -3068,7 +3088,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1455426262}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.77416992, z: -4}
+  m_LocalPosition: {x: 0, y: 0, z: -4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 878474074}
@@ -3915,8 +3935,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 1733129417}
   - 114: {fileID: 1733129416}
+  - 114: {fileID: 1733129418}
   m_Layer: 0
-  m_Name: EnemyStart
+  m_Name: EnemySpawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3951,6 +3972,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
+--- !u!114 &1733129418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1733129415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bbb23c426a1f4e81846e3526132efa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  towers: []
+  gridSize: 2
+  platforms: []
+  autoSearchForPlatform: 0
+  autoAdjstTextureToGrid: 1
+  enableTileIndicator: 1
+  retainPrefabShaderForSamples: 0
+  terrainColliderLayer: -1
 --- !u!1 &1736375338
 GameObject:
   m_ObjectHideFlags: 0
