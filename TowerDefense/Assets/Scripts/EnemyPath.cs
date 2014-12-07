@@ -29,7 +29,11 @@ public class EnemyPath : MonoBehaviour {
 	void Update () {
         var currentPosition = transform.position;
         var nextPosition = waypoints[wpNum].position;
-        var rotation = Quaternion.LookRotation(nextPosition - currentPosition);
+        var rotation = Quaternion.Euler(Vector3.zero);
+        if ((currentPosition - nextPosition) != Vector3.zero)
+        {
+            rotation = Quaternion.LookRotation(nextPosition - currentPosition);
+        }
         if (currentPosition != nextPosition) {
             //Faces enemy towards next waypoint
             transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * rotationalSpeed);
