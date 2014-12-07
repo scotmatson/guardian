@@ -102,6 +102,6 @@ public class SpawnSystem : MonoBehaviour
     void OnGUI()
     {
         //Display the wave number in the top left corner of screen
-        GUI.Label(new Rect(5, 5, 100, 30), "Wave " + curWave.ToString());
+        UnityEngine.GUI.Label(new Rect(5, 5, 100, 30), "Wave " + curWave.ToString());
     }
 }
