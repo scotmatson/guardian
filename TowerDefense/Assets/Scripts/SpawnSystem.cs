@@ -12,7 +12,7 @@ public class SpawnSystem : MonoBehaviour
     //The maximum distance from the target your enemies will spawn
     public float spawnRadiusMax = 30.0f;
     //The amount of time between each spawn
-    public float spawnDelay = 0.5f;
+    public float spawnDelay = 1f;
     //Are you using a terrain? Script uses this to calculate how high above the enemy needs to be placed on spawn
     public bool useTerrain = true;
 
