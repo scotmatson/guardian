@@ -201,7 +201,6 @@ GameObject:
   - 33: {fileID: 36481201}
   - 64: {fileID: 36481200}
   - 23: {fileID: 36481199}
-  - 114: {fileID: 36481204}
   - 114: {fileID: 36481203}
   - 114: {fileID: 36481202}
   m_Layer: 0
@@ -291,20 +290,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cc4d2c2ee3adf040904b83429819407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasTower: 0
-  tower: {fileID: 0}
---- !u!114 &36481204
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 36481197}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ebadf6a71f409a429ea31ff1ae87bff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canAfford: 0
+  HasTower: 0
+  InstanceOfPrefab: {fileID: 0}
+  PromptDelete: 0
 --- !u!1001 &75992313
 Prefab:
   m_ObjectHideFlags: 0
@@ -654,7 +642,6 @@ GameObject:
   - 23: {fileID: 232798929}
   - 114: {fileID: 232798934}
   - 114: {fileID: 232798933}
-  - 114: {fileID: 232798932}
   m_Layer: 0
   m_Name: Tile_44
   m_TagString: Grid
@@ -717,18 +704,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1262415669}
   m_GameObject: {fileID: 232798927}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &232798932
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 232798927}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ebadf6a71f409a429ea31ff1ae87bff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canAfford: 0
 --- !u!114 &232798933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -754,8 +729,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cc4d2c2ee3adf040904b83429819407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasTower: 0
-  tower: {fileID: 0}
+  HasTower: 0
+  InstanceOfPrefab: {fileID: 0}
+  PromptDelete: 0
 --- !u!1 &248506994
 GameObject:
   m_ObjectHideFlags: 0
@@ -840,7 +816,6 @@ GameObject:
   - 33: {fileID: 306290849}
   - 64: {fileID: 306290848}
   - 23: {fileID: 306290847}
-  - 114: {fileID: 306290852}
   - 114: {fileID: 306290851}
   - 114: {fileID: 306290850}
   m_Layer: 0
@@ -930,20 +905,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cc4d2c2ee3adf040904b83429819407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasTower: 0
-  tower: {fileID: 0}
---- !u!114 &306290852
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 306290845}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ebadf6a71f409a429ea31ff1ae87bff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canAfford: 0
+  HasTower: 0
+  InstanceOfPrefab: {fileID: 0}
+  PromptDelete: 0
 --- !u!1 &341575717
 GameObject:
   m_ObjectHideFlags: 0
@@ -1218,7 +1182,6 @@ GameObject:
   - 33: {fileID: 470146147}
   - 64: {fileID: 470146146}
   - 23: {fileID: 470146145}
-  - 114: {fileID: 470146150}
   - 114: {fileID: 470146149}
   - 114: {fileID: 470146148}
   m_Layer: 0
@@ -1308,20 +1271,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cc4d2c2ee3adf040904b83429819407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasTower: 0
-  tower: {fileID: 0}
---- !u!114 &470146150
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 470146143}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ebadf6a71f409a429ea31ff1ae87bff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canAfford: 0
+  HasTower: 0
+  InstanceOfPrefab: {fileID: 0}
+  PromptDelete: 0
 --- !u!1 &482070063
 GameObject:
   m_ObjectHideFlags: 0
@@ -1333,7 +1285,6 @@ GameObject:
   - 33: {fileID: 482070067}
   - 64: {fileID: 482070066}
   - 23: {fileID: 482070065}
-  - 114: {fileID: 482070070}
   - 114: {fileID: 482070069}
   - 114: {fileID: 482070068}
   m_Layer: 0
@@ -1423,20 +1374,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cc4d2c2ee3adf040904b83429819407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasTower: 0
-  tower: {fileID: 0}
---- !u!114 &482070070
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 482070063}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ebadf6a71f409a429ea31ff1ae87bff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canAfford: 0
+  HasTower: 0
+  InstanceOfPrefab: {fileID: 0}
+  PromptDelete: 0
 --- !u!1 &496880451
 GameObject:
   m_ObjectHideFlags: 0
@@ -1521,7 +1461,6 @@ GameObject:
   - 33: {fileID: 501850402}
   - 64: {fileID: 501850401}
   - 23: {fileID: 501850400}
-  - 114: {fileID: 501850405}
   - 114: {fileID: 501850404}
   - 114: {fileID: 501850403}
   m_Layer: 0
@@ -1611,20 +1550,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cc4d2c2ee3adf040904b83429819407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasTower: 0
-  tower: {fileID: 0}
---- !u!114 &501850405
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 501850398}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ebadf6a71f409a429ea31ff1ae87bff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canAfford: 0
+  HasTower: 0
+  InstanceOfPrefab: {fileID: 0}
+  PromptDelete: 0
 --- !u!1 &513639686
 GameObject:
   m_ObjectHideFlags: 0
@@ -1709,7 +1637,6 @@ GameObject:
   - 33: {fileID: 524200201}
   - 64: {fileID: 524200200}
   - 23: {fileID: 524200199}
-  - 114: {fileID: 524200205}
   - 114: {fileID: 524200204}
   - 114: {fileID: 524200203}
   m_Layer: 0
@@ -1799,20 +1726,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cc4d2c2ee3adf040904b83429819407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasTower: 0
-  tower: {fileID: 0}
---- !u!114 &524200205
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 524200198}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ebadf6a71f409a429ea31ff1ae87bff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canAfford: 0
+  HasTower: 0
+  InstanceOfPrefab: {fileID: 0}
+  PromptDelete: 0
 --- !u!1 &591905438
 GameObject:
   m_ObjectHideFlags: 0
@@ -2043,7 +1959,6 @@ GameObject:
   - 33: {fileID: 698173067}
   - 64: {fileID: 698173066}
   - 23: {fileID: 698173065}
-  - 114: {fileID: 698173070}
   - 114: {fileID: 698173069}
   - 114: {fileID: 698173068}
   m_Layer: 0
@@ -2133,20 +2048,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cc4d2c2ee3adf040904b83429819407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasTower: 0
-  tower: {fileID: 0}
---- !u!114 &698173070
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 698173063}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ebadf6a71f409a429ea31ff1ae87bff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canAfford: 0
+  HasTower: 0
+  InstanceOfPrefab: {fileID: 0}
+  PromptDelete: 0
 --- !u!1 &718089567
 GameObject:
   m_ObjectHideFlags: 0
@@ -2628,7 +2532,6 @@ GameObject:
   - 33: {fileID: 873378037}
   - 64: {fileID: 873378036}
   - 23: {fileID: 873378035}
-  - 114: {fileID: 873378040}
   - 114: {fileID: 873378039}
   - 114: {fileID: 873378038}
   m_Layer: 0
@@ -2718,20 +2621,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cc4d2c2ee3adf040904b83429819407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasTower: 0
-  tower: {fileID: 0}
---- !u!114 &873378040
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 873378033}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ebadf6a71f409a429ea31ff1ae87bff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canAfford: 0
+  HasTower: 0
+  InstanceOfPrefab: {fileID: 0}
+  PromptDelete: 0
 --- !u!1 &944477151
 GameObject:
   m_ObjectHideFlags: 0
@@ -2743,7 +2635,6 @@ GameObject:
   - 33: {fileID: 944477155}
   - 64: {fileID: 944477154}
   - 23: {fileID: 944477153}
-  - 114: {fileID: 944477158}
   - 114: {fileID: 944477157}
   - 114: {fileID: 944477156}
   m_Layer: 0
@@ -2833,20 +2724,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cc4d2c2ee3adf040904b83429819407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasTower: 0
-  tower: {fileID: 0}
---- !u!114 &944477158
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 944477151}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ebadf6a71f409a429ea31ff1ae87bff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canAfford: 0
+  HasTower: 0
+  InstanceOfPrefab: {fileID: 0}
+  PromptDelete: 0
 --- !u!1 &970187960
 GameObject:
   m_ObjectHideFlags: 0
@@ -2931,7 +2811,6 @@ GameObject:
   - 33: {fileID: 982878791}
   - 64: {fileID: 982878790}
   - 23: {fileID: 982878789}
-  - 114: {fileID: 982878794}
   - 114: {fileID: 982878793}
   - 114: {fileID: 982878792}
   m_Layer: 0
@@ -3021,20 +2900,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cc4d2c2ee3adf040904b83429819407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasTower: 0
-  tower: {fileID: 0}
---- !u!114 &982878794
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 982878787}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ebadf6a71f409a429ea31ff1ae87bff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canAfford: 0
+  HasTower: 0
+  InstanceOfPrefab: {fileID: 0}
+  PromptDelete: 0
 --- !u!1 &990067061
 GameObject:
   m_ObjectHideFlags: 0
@@ -4041,6 +3909,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 400114, guid: d99e188723c613941906334754433918, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d99e188723c613941906334754433918, type: 2}
   m_RootGameObject: {fileID: 1064241873}
@@ -4465,7 +4337,6 @@ GameObject:
   - 33: {fileID: 1435549814}
   - 64: {fileID: 1435549813}
   - 23: {fileID: 1435549812}
-  - 114: {fileID: 1435549817}
   - 114: {fileID: 1435549816}
   - 114: {fileID: 1435549815}
   m_Layer: 0
@@ -4555,20 +4426,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cc4d2c2ee3adf040904b83429819407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasTower: 0
-  tower: {fileID: 0}
---- !u!114 &1435549817
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1435549810}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ebadf6a71f409a429ea31ff1ae87bff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canAfford: 0
+  HasTower: 0
+  InstanceOfPrefab: {fileID: 0}
+  PromptDelete: 0
 --- !u!1001 &1494293185
 Prefab:
   m_ObjectHideFlags: 0
@@ -4606,6 +4466,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 6f2ef181543e3fa46b4c13a77b768275, type: 2}
       propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400008, guid: 6f2ef181543e3fa46b4c13a77b768275, type: 2}
+      propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -4740,7 +4604,6 @@ GameObject:
   - 33: {fileID: 1556303077}
   - 64: {fileID: 1556303076}
   - 23: {fileID: 1556303075}
-  - 114: {fileID: 1556303080}
   - 114: {fileID: 1556303079}
   - 114: {fileID: 1556303078}
   m_Layer: 0
@@ -4830,20 +4693,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cc4d2c2ee3adf040904b83429819407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasTower: 0
-  tower: {fileID: 0}
---- !u!114 &1556303080
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1556303073}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ebadf6a71f409a429ea31ff1ae87bff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canAfford: 0
+  HasTower: 0
+  InstanceOfPrefab: {fileID: 0}
+  PromptDelete: 0
 --- !u!1 &1611954821
 GameObject:
   m_ObjectHideFlags: 0
@@ -5008,7 +4860,6 @@ GameObject:
   - 33: {fileID: 1743671412}
   - 64: {fileID: 1743671411}
   - 23: {fileID: 1743671410}
-  - 114: {fileID: 1743671415}
   - 114: {fileID: 1743671414}
   - 114: {fileID: 1743671413}
   m_Layer: 0
@@ -5098,20 +4949,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cc4d2c2ee3adf040904b83429819407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasTower: 0
-  tower: {fileID: 0}
---- !u!114 &1743671415
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1743671408}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ebadf6a71f409a429ea31ff1ae87bff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canAfford: 0
+  HasTower: 0
+  InstanceOfPrefab: {fileID: 0}
+  PromptDelete: 0
 --- !u!1 &1745169879
 GameObject:
   m_ObjectHideFlags: 0
@@ -5123,7 +4963,6 @@ GameObject:
   - 33: {fileID: 1745169883}
   - 64: {fileID: 1745169882}
   - 23: {fileID: 1745169881}
-  - 114: {fileID: 1745169886}
   - 114: {fileID: 1745169885}
   - 114: {fileID: 1745169884}
   m_Layer: 0
@@ -5213,20 +5052,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cc4d2c2ee3adf040904b83429819407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasTower: 0
-  tower: {fileID: 0}
---- !u!114 &1745169886
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1745169879}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ebadf6a71f409a429ea31ff1ae87bff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canAfford: 0
+  HasTower: 0
+  InstanceOfPrefab: {fileID: 0}
+  PromptDelete: 0
 --- !u!1 &1792800937
 GameObject:
   m_ObjectHideFlags: 0
@@ -5365,7 +5193,6 @@ GameObject:
   - 33: {fileID: 1827684092}
   - 64: {fileID: 1827684091}
   - 23: {fileID: 1827684090}
-  - 114: {fileID: 1827684095}
   - 114: {fileID: 1827684094}
   - 114: {fileID: 1827684093}
   m_Layer: 0
@@ -5455,20 +5282,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cc4d2c2ee3adf040904b83429819407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasTower: 0
-  tower: {fileID: 0}
---- !u!114 &1827684095
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1827684088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ebadf6a71f409a429ea31ff1ae87bff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canAfford: 0
+  HasTower: 0
+  InstanceOfPrefab: {fileID: 0}
+  PromptDelete: 0
 --- !u!1 &1836514150
 GameObject:
   m_ObjectHideFlags: 0
@@ -5553,7 +5369,6 @@ GameObject:
   - 33: {fileID: 1855362054}
   - 64: {fileID: 1855362053}
   - 23: {fileID: 1855362052}
-  - 114: {fileID: 1855362057}
   - 114: {fileID: 1855362056}
   - 114: {fileID: 1855362055}
   m_Layer: 0
@@ -5643,20 +5458,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cc4d2c2ee3adf040904b83429819407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasTower: 0
-  tower: {fileID: 0}
---- !u!114 &1855362057
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1855362050}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ebadf6a71f409a429ea31ff1ae87bff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canAfford: 0
+  HasTower: 0
+  InstanceOfPrefab: {fileID: 0}
+  PromptDelete: 0
 --- !u!1 &1856464581
 GameObject:
   m_ObjectHideFlags: 0
@@ -5741,7 +5545,6 @@ GameObject:
   - 33: {fileID: 1857577723}
   - 64: {fileID: 1857577722}
   - 23: {fileID: 1857577721}
-  - 114: {fileID: 1857577726}
   - 114: {fileID: 1857577725}
   - 114: {fileID: 1857577724}
   m_Layer: 0
@@ -5831,20 +5634,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cc4d2c2ee3adf040904b83429819407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasTower: 0
-  tower: {fileID: 0}
---- !u!114 &1857577726
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1857577719}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ebadf6a71f409a429ea31ff1ae87bff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canAfford: 0
+  HasTower: 0
+  InstanceOfPrefab: {fileID: 0}
+  PromptDelete: 0
 --- !u!1 &1860434151
 GameObject:
   m_ObjectHideFlags: 0
@@ -5856,7 +5648,6 @@ GameObject:
   - 33: {fileID: 1860434155}
   - 64: {fileID: 1860434154}
   - 23: {fileID: 1860434153}
-  - 114: {fileID: 1860434158}
   - 114: {fileID: 1860434157}
   - 114: {fileID: 1860434156}
   m_Layer: 0
@@ -5946,20 +5737,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cc4d2c2ee3adf040904b83429819407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasTower: 0
-  tower: {fileID: 0}
---- !u!114 &1860434158
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1860434151}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ebadf6a71f409a429ea31ff1ae87bff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canAfford: 0
+  HasTower: 0
+  InstanceOfPrefab: {fileID: 0}
+  PromptDelete: 0
 --- !u!1 &1869251289
 GameObject:
   m_ObjectHideFlags: 0
@@ -5971,7 +5751,6 @@ GameObject:
   - 33: {fileID: 1869251293}
   - 64: {fileID: 1869251292}
   - 23: {fileID: 1869251291}
-  - 114: {fileID: 1869251296}
   - 114: {fileID: 1869251295}
   - 114: {fileID: 1869251294}
   m_Layer: 0
@@ -6061,20 +5840,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cc4d2c2ee3adf040904b83429819407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasTower: 0
-  tower: {fileID: 0}
---- !u!114 &1869251296
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1869251289}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ebadf6a71f409a429ea31ff1ae87bff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canAfford: 0
+  HasTower: 0
+  InstanceOfPrefab: {fileID: 0}
+  PromptDelete: 0
 --- !u!1 &1915973886
 GameObject:
   m_ObjectHideFlags: 0
@@ -6086,7 +5854,6 @@ GameObject:
   - 33: {fileID: 1915973890}
   - 64: {fileID: 1915973889}
   - 23: {fileID: 1915973888}
-  - 114: {fileID: 1915973893}
   - 114: {fileID: 1915973892}
   - 114: {fileID: 1915973891}
   m_Layer: 0
@@ -6176,20 +5943,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cc4d2c2ee3adf040904b83429819407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasTower: 0
-  tower: {fileID: 0}
---- !u!114 &1915973893
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1915973886}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ebadf6a71f409a429ea31ff1ae87bff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canAfford: 0
+  HasTower: 0
+  InstanceOfPrefab: {fileID: 0}
+  PromptDelete: 0
 --- !u!1 &1957693568
 GameObject:
   m_ObjectHideFlags: 0
@@ -6201,9 +5957,7 @@ GameObject:
   - 33: {fileID: 1957693572}
   - 64: {fileID: 1957693571}
   - 23: {fileID: 1957693570}
-  - 114: {fileID: 1957693574}
   - 114: {fileID: 1957693573}
-  - 114: {fileID: 1957693577}
   - 114: {fileID: 1957693576}
   - 114: {fileID: 1957693575}
   m_Layer: 0
@@ -6279,20 +6033,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cc4d2c2ee3adf040904b83429819407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasTower: 0
-  tower: {fileID: 0}
---- !u!114 &1957693574
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1957693568}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ebadf6a71f409a429ea31ff1ae87bff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canAfford: 0
+  HasTower: 0
+  InstanceOfPrefab: {fileID: 0}
+  PromptDelete: 0
 --- !u!114 &1957693575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6318,20 +6061,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cc4d2c2ee3adf040904b83429819407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasTower: 0
-  tower: {fileID: 0}
---- !u!114 &1957693577
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1957693568}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ebadf6a71f409a429ea31ff1ae87bff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canAfford: 0
+  HasTower: 0
+  InstanceOfPrefab: {fileID: 0}
+  PromptDelete: 0
 --- !u!1 &2000909448
 GameObject:
   m_ObjectHideFlags: 0
@@ -6489,7 +6221,6 @@ GameObject:
   - 33: {fileID: 2051942373}
   - 64: {fileID: 2051942372}
   - 23: {fileID: 2051942371}
-  - 114: {fileID: 2051942376}
   - 114: {fileID: 2051942375}
   - 114: {fileID: 2051942374}
   m_Layer: 0
@@ -6579,20 +6310,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cc4d2c2ee3adf040904b83429819407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasTower: 0
-  tower: {fileID: 0}
---- !u!114 &2051942376
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2051942369}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ebadf6a71f409a429ea31ff1ae87bff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canAfford: 0
+  HasTower: 0
+  InstanceOfPrefab: {fileID: 0}
+  PromptDelete: 0
 --- !u!1 &2052094245
 GameObject:
   m_ObjectHideFlags: 0
@@ -6616,7 +6336,7 @@ Transform:
   m_PrefabInternal: {fileID: 1494293185}
   m_GameObject: {fileID: 2052094245}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4, y: 0, z: 2}
+  m_LocalPosition: {x: 4, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1151238191}
