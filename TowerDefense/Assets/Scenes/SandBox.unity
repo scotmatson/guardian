@@ -213,7 +213,6 @@ GameObject:
   - 33: {fileID: 195552403}
   - 64: {fileID: 195552402}
   - 23: {fileID: 195552401}
-  - 114: {fileID: 195552405}
   - 114: {fileID: 195552406}
   m_Layer: 0
   m_Name: Plane
@@ -274,18 +273,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
---- !u!114 &195552405
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 195552400}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ebadf6a71f409a429ea31ff1ae87bff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canAfford: 0
 --- !u!114 &195552406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -297,8 +284,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cc4d2c2ee3adf040904b83429819407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasTower: 0
-  tower: {fileID: 0}
+  HasTower: 0
+  InstanceOfPrefab: {fileID: 0}
+  PromptDelete: 0
 --- !u!1 &213429909
 GameObject:
   m_ObjectHideFlags: 0
@@ -620,7 +608,6 @@ GameObject:
   - 33: {fileID: 834899483}
   - 64: {fileID: 834899482}
   - 23: {fileID: 834899481}
-  - 114: {fileID: 834899480}
   - 114: {fileID: 834899479}
   m_Layer: 0
   m_Name: Plane
@@ -640,20 +627,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cc4d2c2ee3adf040904b83429819407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasTower: 0
-  tower: {fileID: 0}
---- !u!114 &834899480
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 834899478}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ebadf6a71f409a429ea31ff1ae87bff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canAfford: 0
+  HasTower: 0
+  InstanceOfPrefab: {fileID: 0}
+  PromptDelete: 0
 --- !u!23 &834899481
 Renderer:
   m_ObjectHideFlags: 0
@@ -882,7 +858,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _currentTarget: {fileID: 0}
-  Cost: 0
   HasTarget: 0
 --- !u!1 &1353433805
 GameObject:
@@ -929,7 +904,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _currentTarget: {fileID: 0}
-  Cost: 0
   HasTarget: 0
 --- !u!95 &1353433808
 Animator:
