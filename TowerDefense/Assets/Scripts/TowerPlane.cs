@@ -7,6 +7,9 @@ public class TowerPlane : MonoBehaviour
 
     public bool IsAvailable;
 
+
+
+
 	// Use this for initialization
 	void Start () {
 	

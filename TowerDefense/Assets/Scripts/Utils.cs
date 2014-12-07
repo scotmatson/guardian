@@ -22,4 +22,15 @@ public  class Utils : MonoBehaviour {
         }
         return targetPostion;
     }
+
+
+
+
+    enum TowerType
+    {
+        DoubleTurret,
+        Fire,
+        Beam 
+    }
+
 }
