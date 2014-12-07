@@ -23,14 +23,20 @@ public class TowerPlane : MonoBehaviour
 
     void BuildTowerOnPlane()
     {
-        this.tower = Utils.TowerFromType(Utils.TowerType.DoubleTurret);
+        this.tower = Utils.TowerFromType(GameState.CurrenTowerType);
 
         Instantiate(tower, this.transform.position , transform.rotation);
+
+        GameState.Currency -= Utils.TowerCost(GameState.CurrenTowerType);
+
     }
 
     void OnMouseDown()
     {
-        Debug.Log("Build");
-        BuildTowerOnPlane();
+        if (Utils.CanAfford())
+        {
+            Debug.Log("Build");
+            BuildTowerOnPlane();
+        }
     }
 }

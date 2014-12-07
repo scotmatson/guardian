@@ -4,6 +4,7 @@ using System.Collections;
 public class ClickablePlane : MonoBehaviour
 {
     public Plane thisPlane;
+
     public bool canAfford;
 
     private Color _startingColor;
@@ -16,13 +17,19 @@ public class ClickablePlane : MonoBehaviour
 	
 	// Update is called once per frame
 	void Update () {
-	
+	 
+
+
 	}
+
+
 
     void OnMouseEnter()
     {
+        
+
         //Changes Color to Green if can afford tower
-        this.gameObject.renderer.material.color = canAfford ? Color.green : Color.red;
+        this.gameObject.renderer.material.color = Utils.CanAfford() ? Color.green : Color.red;
     }
 
     void OnMouseExit()

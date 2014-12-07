@@ -41,6 +41,24 @@ public  class Utils : MonoBehaviour {
         return null;
     }
 
+    public static int TowerCost(TowerType tower)
+    {
+        switch (tower)
+        {
+            case TowerType.DoubleTurret:
+                return 100;
+        }
+
+        return 0;
+    }
+
+    public static bool CanAfford()
+    {
+
+        return GameState.Currency >= Utils.TowerCost(GameState.CurrenTowerType);
+    
+    }
+
 
     public enum TowerType
     {

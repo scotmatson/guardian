@@ -486,6 +486,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BulletRef: {fileID: 0}
+  ShootingFreq: 0
+  ParentGameObject: {fileID: 0}
 --- !u!1 &430840683
 GameObject:
   m_ObjectHideFlags: 0
@@ -880,6 +882,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _currentTarget: {fileID: 0}
+  Cost: 0
+  HasTarget: 0
 --- !u!1 &1353433805
 GameObject:
   m_ObjectHideFlags: 0
@@ -925,6 +929,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _currentTarget: {fileID: 0}
+  Cost: 0
+  HasTarget: 0
 --- !u!95 &1353433808
 Animator:
   serializedVersion: 3
@@ -1179,6 +1185,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BulletRef: {fileID: 0}
+  ShootingFreq: 0
+  ParentGameObject: {fileID: 0}
 --- !u!23 &1674354284
 Renderer:
   m_ObjectHideFlags: 0
@@ -1347,6 +1355,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2124317345}
   - 114: {fileID: 2124317344}
+  - 114: {fileID: 2124317346}
   m_Layer: 0
   m_Name: NEEEEEDDDEDEED
   m_TagString: Untagged
@@ -1377,6 +1386,53 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
+--- !u!114 &2124317346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2124317343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a6a78e8a441354e84006bf426cf3b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TurretMenu: 0
+  GamePaused: 0
+  turret1texture2D: {fileID: 2800000, guid: 769840678c7b38a4a93af5f9802d0bc7, type: 3}
+  turret2Texture2D: {fileID: 2800000, guid: 245c0d8b09ce0eb4391f4c5a8d134738, type: 3}
+  Turret3Texture2D: {fileID: 2800000, guid: 5be5b86e8c8e45345a4cc21c84c1c04f, type: 3}
+  Turret1Rect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  Turret2Rect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  Turret3Rect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  TurretBoarder:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  ActiveTurret:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  ActiveTurretTexture2D: {fileID: 0}
 --- !u!1 &2142964457
 GameObject:
   m_ObjectHideFlags: 0
