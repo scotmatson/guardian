@@ -12,8 +12,7 @@ public  class Utils : MonoBehaviour {
 
 
     //Returns the Postion in the Gameworld where mouse input is given
-    public static Vector3 GetTargetPosition(Vector3 mouseInput)
-    {
+    public static Vector3 GetTargetPosition(Vector3 mouseInput) {
         var ray = Camera.main.ScreenPointToRay(mouseInput);
         float hitDist;
 
@@ -31,40 +30,30 @@ public  class Utils : MonoBehaviour {
     {
         Turret_TwinTurret = Resources.Load<GameObject>("Turrets/TwinPrefab");
 
-        switch (tower)
-        {
-                case TowerType.DoubleTurret:
-                return Turret_TwinTurret;
-
+        switch (tower) {
+          case TowerType.DoubleTurret:
+            return Turret_TwinTurret;
         }
 
         return null;
     }
 
-    public static int TowerCost(TowerType tower)
-    {
-        switch (tower)
-        {
-            case TowerType.DoubleTurret:
-                return 100;
+    public static int TowerCost(TowerType tower) {
+        switch (tower) {
+          case TowerType.DoubleTurret:
+            return 100;
         }
-
         return 0;
     }
 
-    public static bool CanAfford()
-    {
-
-        return GameState.Currency >= Utils.TowerCost(GameState.CurrenTowerType);
-    
+    public static bool CanAfford() {
+      return GameState.Currency >= Utils.TowerCost(GameState.CurrenTowerType);
     }
 
 
-    public enum TowerType
-    {
-        DoubleTurret,
-        Fire,
-        Beam 
+    public enum TowerType {
+      DoubleTurret,
+      Fire,
+      Beam 
     }
-
 }
