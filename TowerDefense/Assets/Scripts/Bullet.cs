@@ -5,20 +5,22 @@ using System.Collections;
 public class Bullet : MonoBehaviour
 {
 
-    public float speed; //Speed of the projectile
+    public float Speed;
 
 	// Use this for initialization
 	void Start ()
 	{
-	    speed = (speed == 0) ? 3 : speed;
+
+	    Speed = (Speed == 0) ? .2f : Speed;
 
 	}
 	
 	// Update is called once per frame
 	void Update ()
 	{
-	    var newPos = transform.forward*speed;
-	    transform.position = newPos;
-        transform.Translate(Vector3.forward * Time.deltaTime * speed);
-    }
+
+	    var newPos = transform.forward*Speed;
+	    transform.position += newPos;
+
+	}
 }
