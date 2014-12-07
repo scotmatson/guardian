@@ -19,7 +19,7 @@ RenderSettings:
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientLight: {r: .200000003, g: .200000003, b: .200000003, a: 1}
-  m_SkyboxMaterial: {fileID: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 9393b2814afb731408c7735a104fdbcc, type: 2}
   m_HaloStrength: .5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -1103,7 +1103,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 69c65196997cad94da113a01a49447ea, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 10
+      value: 7.69999981
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 69c65196997cad94da113a01a49447ea, type: 2}
       propertyPath: m_LocalPosition.z
@@ -2611,7 +2611,7 @@ Transform:
   m_PrefabInternal: {fileID: 431748700}
   m_GameObject: {fileID: 859250078}
   m_LocalRotation: {x: .707106829, y: 0, z: 0, w: .707106829}
-  m_LocalPosition: {x: 0, y: 10, z: 0}
+  m_LocalPosition: {x: 0, y: 7.69999981, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1628160898}
@@ -4033,6 +4033,14 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3300096, guid: d99e188723c613941906334754433918, type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+    - target: {fileID: 2300096, guid: d99e188723c613941906334754433918, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d99e188723c613941906334754433918, type: 2}
   m_RootGameObject: {fileID: 1064241873}
