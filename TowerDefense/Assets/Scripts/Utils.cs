@@ -29,8 +29,7 @@ public  class Utils : MonoBehaviour {
 
     public static GameObject TowerFromType(TowerType tower)
     {
-        Turret_TwinTurret = Resources.Load<GameObject>("Turret_TwinCannon");
-
+        Turret_TwinTurret = Resources.Load<GameObject>("Turrets/TwinPrefab");
 
         switch (tower)
         {
