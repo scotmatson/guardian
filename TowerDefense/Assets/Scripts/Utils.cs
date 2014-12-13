@@ -6,9 +6,9 @@ public  class Utils : MonoBehaviour {
 
     private static Plane _xzPlane = new Plane(Vector3.up,Vector3.zero);
 
-    public static GameObject Turret_TwinTurret;
-    public static GameObject Turret_Fire;
-    public static GameObject Turret_Beam;
+    public static GameObject Turret_TwinTurret  = Resources.Load<GameObject>("Turrets/TwinPrefab");
+    public static GameObject Turret_Missle = Resources.Load<GameObject>("Turrets/MissilePrefab");
+    public static GameObject Turret_Beam = Resources.Load<GameObject>("Turrets/BeamPrefab");
 
 
     //Returns the Postion in the Gameworld where mouse input is given
@@ -26,13 +26,19 @@ public  class Utils : MonoBehaviour {
         return targetPostion;
     }
 
+
+
+
     public static GameObject TowerFromType(TowerType tower)
     {
-        Turret_TwinTurret = Resources.Load<GameObject>("Turrets/TwinPrefab");
-
-        switch (tower) {
-          case TowerType.DoubleTurret:
-            return Turret_TwinTurret;
+        switch (tower)
+        {
+            case TowerType.DoubleTurret:
+                return Turret_TwinTurret;
+            case TowerType.Missile:
+                return Turret_Missle;
+            case TowerType.Beam:
+                return Turret_Beam;
         }
 
         return null;
@@ -42,6 +48,11 @@ public  class Utils : MonoBehaviour {
         switch (tower) {
           case TowerType.DoubleTurret:
             return 100;
+          case TowerType.Beam:
+            return 150;
+          case TowerType.Missile:
+            return 200;
+
         }
         return 0;
     }
@@ -53,7 +64,7 @@ public  class Utils : MonoBehaviour {
 
     public enum TowerType {
       DoubleTurret,
-      Fire,
+      Missile,
       Beam 
     }
 }

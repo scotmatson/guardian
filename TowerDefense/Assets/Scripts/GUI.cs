@@ -58,7 +58,14 @@ public class GUI : MonoBehaviour
 	    if (Input.GetKeyDown(KeyCode.T)) {
 	        TurretMenu = !TurretMenu;
 	    }
-
+        else if (Input.GetMouseButtonDown(0))
+        {
+            //Clicking on the Active Turret will Toggle Turret Menu too
+            if (CurrentTurretClicked())
+            {
+                TurretMenu = !TurretMenu;
+            }
+        }
 
 	    if (!GamePaused) {
 	        GamePaused = Input.GetKeyDown(KeyCode.Escape);
@@ -67,6 +74,13 @@ public class GUI : MonoBehaviour
 	        Pausegame();
 	    }
 	}
+
+    bool CurrentTurretClicked()
+    {
+        var clickedOnScreen = Input.mousePosition;
+        clickedOnScreen.y = Screen.height - clickedOnScreen.y;
+        return ActiveTurret.Contains(clickedOnScreen);
+    }
 
     void OnGUI() {
         if (GamePaused) {
@@ -87,7 +101,7 @@ public class GUI : MonoBehaviour
         //TurretSelector = UnityEngine.GUI.Window(0, TurretSelector, PauseMenu, "");
     }
 
-    public void SelectTurret() {
+    void SelectTurret() {
         if (Input.GetMouseButtonDown(0)) {
             //Stupid Unity Making me do stupid offset
             var clickedOnScreen = Input.mousePosition;
@@ -95,12 +109,15 @@ public class GUI : MonoBehaviour
 
             if (Turret1Rect.Contains(clickedOnScreen)) {
                 ActiveTurretTexture2D = turret1texture2D;
+                GameState.CurrenTowerType = Utils.TowerType.DoubleTurret;
             }
             if (Turret2Rect.Contains(clickedOnScreen)) {
                 ActiveTurretTexture2D = turret2Texture2D;
+                GameState.CurrenTowerType = Utils.TowerType.Missile;
             }
             if (Turret3Rect.Contains(clickedOnScreen)) {
                 ActiveTurretTexture2D = Turret3Texture2D;
+                GameState.CurrenTowerType = Utils.TowerType.Beam;
             }
         }
     }
