@@ -6,7 +6,7 @@ public class GameState : MonoBehaviour
 {
 
 
-    public static int Currency = 100;
+    public static int Currency = 1000;
     public static int Score = 0;
 
     //Arbituray 5 right now
