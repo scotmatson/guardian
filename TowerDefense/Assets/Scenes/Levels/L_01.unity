@@ -4032,7 +4032,7 @@ Transform:
   - {fileID: 20203537}
   - {fileID: 1611954822}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
 --- !u!1 &1175352776
 GameObject:
   m_ObjectHideFlags: 0
@@ -4567,7 +4567,7 @@ Transform:
   - {fileID: 1570124661}
   - {fileID: 357249743}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!95 &1318943008
 Animator:
   serializedVersion: 3
