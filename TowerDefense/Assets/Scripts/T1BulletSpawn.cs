@@ -24,7 +24,7 @@ public class T1BulletSpawn : MonoBehaviour
 
 
         //Initalize if they are not 
-	    ShootingFreq = (ShootingFreq == 0) ? 1.0f : ShootingFreq;
+	    ShootingFreq = (ShootingFreq == 0) ? .5f : ShootingFreq;
 	    
         //Delay first shot 
         _nextShot = 0;

@@ -57,6 +57,7 @@ public class GUI : MonoBehaviour
         //'t' Will Toggle Turret Menu
 	    if (Input.GetKeyDown(KeyCode.T)) {
 	        TurretMenu = !TurretMenu;
+            Pausegame();
 	    }
         else if (Input.GetMouseButtonDown(0))
         {
@@ -64,6 +65,7 @@ public class GUI : MonoBehaviour
             if (CurrentTurretClicked())
             {
                 TurretMenu = !TurretMenu;
+                Pausegame();
             }
         }
 
@@ -79,6 +81,9 @@ public class GUI : MonoBehaviour
     {
         var clickedOnScreen = Input.mousePosition;
         clickedOnScreen.y = Screen.height - clickedOnScreen.y;
+        
+        //Pauses Game makes it easier to select
+
         return ActiveTurret.Contains(clickedOnScreen);
     }
 
@@ -119,6 +124,8 @@ public class GUI : MonoBehaviour
                 ActiveTurretTexture2D = Turret3Texture2D;
                 GameState.CurrenTowerType = Utils.TowerType.Beam;
             }
+            UnPause();
+            TurretMenu =  !TurretMenu;
         }
     }
 
