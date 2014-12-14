@@ -9,9 +9,9 @@ public class GUI : MonoBehaviour
     public bool TurretMenu;
     public bool GamePaused;
 
-    public Texture2D turret1texture2D;
-    public Texture2D turret2Texture2D;
-    public Texture2D Turret3Texture2D;
+    private Texture2D _turret1texture2D;
+    private Texture2D _turret2Texture2D;
+    //public Texture2D Turret3Texture2D;
     
     public Rect Turret1Rect;
     public Rect Turret2Rect;
@@ -31,17 +31,22 @@ public class GUI : MonoBehaviour
 
         //Fixed in the corner can move
         ActiveTurret = new Rect(10,Screen.height - 110 ,100,100);
-        
+
+
+        _turret1texture2D = Utils.TurreTexture2DFromType(Utils.TowerType.DoubleTurret);
+        _turret2Texture2D = Utils.TurreTexture2DFromType(Utils.TowerType.Missile);
+
+
         //Default Turret
-        ActiveTurretTexture2D = turret1texture2D; 
+        ActiveTurretTexture2D = _turret1texture2D; 
 
         var x = (Screen.width / 2) - (400 / 2);
         var y =  (Screen.height / 2) - (110 / 2);
         
         Turret1Rect = new Rect(x,y, 100, 100);       
         Turret2Rect = new Rect(x + 100, y, 100, 100);
-        Turret3Rect = new Rect(x + 200, y ,100, 100);
-        TurretBoarder = new Rect(x - 5, y - 10, 400,110);
+        //Turret3Rect = new Rect(x + 200, y ,100, 100);
+        TurretBoarder = new Rect(x - 5, y - 10, 200,110);
 
         const float pauseWidth = 350f;
         const float pauseHeight = 500f;
@@ -50,6 +55,8 @@ public class GUI : MonoBehaviour
         var pauseY = (Screen.height/2) - (pauseHeight/2);
 
         _pauseMenuRect = new Rect(pauseX,pauseY,pauseWidth,pauseHeight);
+
+       
     }
 	
 	// Update is called once per frame
@@ -97,9 +104,9 @@ public class GUI : MonoBehaviour
 
         if (TurretMenu) {
             //Turret Menu stuff
-            UnityEngine.GUI.DrawTexture(Turret1Rect, turret1texture2D);
-            UnityEngine.GUI.DrawTexture(Turret2Rect, turret2Texture2D);
-            UnityEngine.GUI.DrawTexture(Turret3Rect, Turret3Texture2D);
+            UnityEngine.GUI.DrawTexture(Turret1Rect, _turret1texture2D);
+            UnityEngine.GUI.DrawTexture(Turret2Rect, _turret2Texture2D);
+       //     UnityEngine.GUI.DrawTexture(Turret3Rect, Turret3Texture2D);
             UnityEngine.GUI.Box(TurretBoarder, ""); 
             SelectTurret();
         }
@@ -113,17 +120,17 @@ public class GUI : MonoBehaviour
             clickedOnScreen.y = Screen.height - clickedOnScreen.y;
 
             if (Turret1Rect.Contains(clickedOnScreen)) {
-                ActiveTurretTexture2D = turret1texture2D;
+                ActiveTurretTexture2D = _turret1texture2D;
                 GameState.CurrenTowerType = Utils.TowerType.DoubleTurret;
             }
             if (Turret2Rect.Contains(clickedOnScreen)) {
-                ActiveTurretTexture2D = turret2Texture2D;
+                ActiveTurretTexture2D = _turret2Texture2D;
                 GameState.CurrenTowerType = Utils.TowerType.Missile;
             }
-            if (Turret3Rect.Contains(clickedOnScreen)) {
-                ActiveTurretTexture2D = Turret3Texture2D;
-                GameState.CurrenTowerType = Utils.TowerType.Beam;
-            }
+           // if (Turret3Rect.Contains(clickedOnScreen)) {
+         //       ActiveTurretTexture2D = Turret3Texture2D;
+         //       GameState.CurrenTowerType = Utils.TowerType.Beam;
+        //    }
             UnPause();
             TurretMenu =  !TurretMenu;
         }

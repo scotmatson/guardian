@@ -23442,9 +23442,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TurretMenu: 0
   GamePaused: 0
-  turret1texture2D: {fileID: 2800000, guid: 769840678c7b38a4a93af5f9802d0bc7, type: 3}
-  turret2Texture2D: {fileID: 2800000, guid: 245c0d8b09ce0eb4391f4c5a8d134738, type: 3}
-  Turret3Texture2D: {fileID: 2800000, guid: 5be5b86e8c8e45345a4cc21c84c1c04f, type: 3}
   Turret1Rect:
     serializedVersion: 2
     x: 0
