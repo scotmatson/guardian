@@ -62,6 +62,26 @@ public  class Utils : MonoBehaviour {
     }
 
 
+    public static Texture2D TurreTexture2DFromType(TowerType type)
+    {
+        Texture2D toReturn;
+
+        switch (type)
+        {
+            case TowerType.DoubleTurret:
+                toReturn = Resources.Load<Texture2D>("Sprites/Twin");
+                break;
+            case TowerType.Missile:
+                toReturn = Resources.Load<Texture2D>("Sprites/Missile");
+                break;
+            default:
+                toReturn = null;
+                break;
+        }
+        return toReturn;
+    }
+     
+
     public enum TowerType {
       DoubleTurret,
       Missile,

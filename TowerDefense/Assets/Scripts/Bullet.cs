@@ -11,7 +11,7 @@ public class Bullet : MonoBehaviour
 	void Start ()
 	{
 
-	    Speed = (Speed == 0) ? .2f : Speed;
+	    Speed = (Speed == 0) ? .5f : Speed;
 
 	}
 	
@@ -19,8 +19,27 @@ public class Bullet : MonoBehaviour
 	void Update ()
 	{
 
+
 	    var newPos = transform.forward*Speed;
 	    transform.position += newPos;
 
+	    if (!renderer.isVisible)
+	    {
+	        Destroy(gameObject);
+	    }
+
 	}
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Enemy")
+        {
+            //Calls the method DoDamage on all MonoBehaviours(Scripts) attached to this GameObject
+            other.gameObject.SendMessage("DoDamage", 1);
+
+            //Destroy the Missile
+            Destroy(gameObject);
+        }
+    }
+
 }
