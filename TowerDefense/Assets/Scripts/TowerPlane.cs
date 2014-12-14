@@ -49,7 +49,7 @@ public class TowerPlane : MonoBehaviour
     void BuildTowerOnPlane()
     {
         //Gets the current type that will be built
-        _currentType = GameState.CurrenTowerType;
+        _currentType = GameState.CurrentTowerType;
 
         this._tower = Utils.TowerFromType(_currentType);
 

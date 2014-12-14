@@ -4,7 +4,7 @@ using UnityEditor;
 using UnityEngine;
 using System.Collections;
 
-public class GUI : MonoBehaviour
+public class GUI_Gameplay : MonoBehaviour
 {
     public bool TurretMenu;
     public bool GamePaused;
@@ -121,11 +121,11 @@ public class GUI : MonoBehaviour
 
             if (Turret1Rect.Contains(clickedOnScreen)) {
                 ActiveTurretTexture2D = _turret1texture2D;
-                GameState.CurrenTowerType = Utils.TowerType.DoubleTurret;
+                GameState.CurrentTowerType = Utils.TowerType.DoubleTurret;
             }
             if (Turret2Rect.Contains(clickedOnScreen)) {
                 ActiveTurretTexture2D = _turret2Texture2D;
-                GameState.CurrenTowerType = Utils.TowerType.Missile;
+                GameState.CurrentTowerType = Utils.TowerType.Missile;
             }
            // if (Turret3Rect.Contains(clickedOnScreen)) {
          //       ActiveTurretTexture2D = Turret3Texture2D;
