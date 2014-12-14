@@ -9,7 +9,7 @@ public class EnemyPath : MonoBehaviour {
     private Vector3 currentPosition;
 
     //The travel speed of the game object
-    public float travelSpeed = 5.0f;
+    public float travelSpeed = 1.0f;
     //The rotational speed of game object
     public float rotationalSpeed = 10.0f;
     //The starting index for waypoints

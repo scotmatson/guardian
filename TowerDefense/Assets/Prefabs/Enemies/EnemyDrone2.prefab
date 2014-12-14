@@ -70,7 +70,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d9fabf5e007fcd4da652969e8a984a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  travelSpeed: 10
+  travelSpeed: 5
   rotationalSpeed: 8
   wpNum: 1
   path: Waypoints2
