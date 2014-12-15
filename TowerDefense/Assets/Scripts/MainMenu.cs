@@ -5,10 +5,17 @@ using GUI = UnityEngine.GUI;
 
 public class MainMenu : MonoBehaviour
 {
+    public GUISkin mySkin;
 
     public int SelectedLevel;
 
     public Rect mainWindowRect;
+
+    public Texture2D myT;
+
+    public Rect TitleRect;
+
+
 
 	// Use this for initialization
 	void Start ()
@@ -23,10 +30,13 @@ public class MainMenu : MonoBehaviour
 
         mainWindowRect = new Rect(mainX,mainY,mainWindowwidth,mainWindowheight);
 
+        TitleRect  = new Rect(75, 75, 600, 75);
+
 	}
 	
     void OnGUI()
     {
+        GUI.skin = mySkin;
         mainWindowRect = UnityEngine.GUI.Window(GUI_IDs.MainMenu, mainWindowRect, MainMenuBuilder, "");
     }
 
@@ -34,6 +44,8 @@ public class MainMenu : MonoBehaviour
     {
         Application.LoadLevel(SelectedLevel);
     }
+
+ 
 
     //This function is used to build the stuff in the main menu
     void MainMenuBuilder(int windowID)
@@ -43,33 +55,35 @@ public class MainMenu : MonoBehaviour
         GUILayout.Space(8);
         //GUILayout.Label("","Divder");
 
-        var labelPos = new Rect(75, 125, 600, 75);
-        GUI.Label(labelPos,"Defend!");
+      
+        //GUI.Label(labelPos,"Defend!",mySkin.FindStyle("Label"));
+        GUI.DrawTexture(TitleRect,myT);
+
 
        // GUILayout.Label("","Divider");
 
         var playPos = new Rect(175, 200, 400, 75);
-        var play = GUI.Button(playPos, "Play Game");
+        var play = GUI.Button(playPos, "Play Game",mySkin.FindStyle("Button"));
 
         var pos = new Rect {y = 300, height = 50, width = 200};
 
         //Level 1
         pos.x = 60;
-        if (GUI.Button(pos, "Deep Space"))
+        if (GUI.Button(pos, "Deep Space", mySkin.FindStyle("Button")))
         {
             SelectedLevel = 1;
         }
 
         //Level 2
         pos.x = 280;
-        if (GUI.Button(pos, "Crossing Streams"))
+        if (GUI.Button(pos, "Crossing Streams", mySkin.FindStyle("Button")))
         {
             SelectedLevel = 2;
         }
 
         //Level 3
         pos.x = 500;
-        if (GUI.Button(pos, "Map 3"))
+        if (GUI.Button(pos, "Map 3", mySkin.FindStyle("Button")))
         {
             SelectedLevel = 3;
         }
@@ -77,7 +91,7 @@ public class MainMenu : MonoBehaviour
         //Quit Game
         var quitPos = new Rect(175, 375, 400, 75);
 
-        if (GUI.Button(quitPos, "Exit"))
+        if (GUI.Button(quitPos, "Exit", mySkin.FindStyle("Button")))
         {
             Application.Quit();
         }
