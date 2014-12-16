@@ -30,13 +30,13 @@ public class MainMenu : MonoBehaviour
 
         mainWindowRect = new Rect(mainX,mainY,mainWindowwidth,mainWindowheight);
 
-        TitleRect  = new Rect(75, 75, 600, 75);
+        TitleRect  = new Rect(50, -100, 700, 1000);
 
 	}
 	
     void OnGUI()
     {
-        GUI.skin = mySkin;
+        GUI.skin = null;//mySkin;
         mainWindowRect = UnityEngine.GUI.Window(GUI_IDs.MainMenu, mainWindowRect, MainMenuBuilder, "");
     }
 

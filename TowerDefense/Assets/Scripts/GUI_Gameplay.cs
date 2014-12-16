@@ -29,6 +29,12 @@ public class GUI_Gameplay : MonoBehaviour
     public Rect ActiveTurret;
     public Texture2D ActiveTurretTexture2D;
 
+
+    void Awake()
+    {
+        
+    }
+
     void Start ()
     {
         //Just to be safe 
@@ -111,9 +117,12 @@ public class GUI_Gameplay : MonoBehaviour
     void OnGUI()
     {
 
-        GUI.skin = skin;
-        
 
+        //This Stops from drawing on Main Menu
+        if ( Application.loadedLevel == 0) return;
+        ;
+
+        GUI.skin = skin;
 
         RenderHUD();
 
@@ -160,13 +169,24 @@ public class GUI_Gameplay : MonoBehaviour
         }
     }
 
+
+
     void Pausegame() {
         Time.timeScale = 0;
+    
+        //Can do music here
+    
+    
     }
+
 
     void UnPause() {
         Time.timeScale = 1;
         GamePaused = false;
+
+        //Can do Music Here
+
+
     }
 
 

@@ -19,7 +19,7 @@ RenderSettings:
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientLight: {r: .200000003, g: .200000003, b: .200000003, a: 1}
-  m_SkyboxMaterial: {fileID: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 88ec9a13802800449aaf825aff3aadc7, type: 2}
   m_HaloStrength: .5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -87,6 +87,7 @@ GameObject:
   - 124: {fileID: 1799274952}
   - 81: {fileID: 1799274951}
   - 114: {fileID: 1799274956}
+  - 114: {fileID: 1799274957}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -178,13 +179,64 @@ MonoBehaviour:
     y: 0
     width: 0
     height: 0
-  myT: {fileID: 2800000, guid: d957330d362a53c409825158777069ae, type: 3}
+  myT: {fileID: 2800000, guid: e31c80b631a762041a591d71764b7304, type: 3}
   TitleRect:
     serializedVersion: 2
     x: 0
     y: 0
     width: 0
     height: 0
+--- !u!114 &1799274957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1799274950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a6a78e8a441354e84006bf426cf3b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skin: {fileID: 11400000, guid: fdc6ad1a4d4d042c39d11e0fc33f7def, type: 2}
+  TurretMenu: 0
+  GamePaused: 0
+  _hudDisplay:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  Turret1Rect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  Turret2Rect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  Turret3Rect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  TurretBoarder:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  ActiveTurret:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  ActiveTurretTexture2D: {fileID: 0}
 --- !u!1 &1951740515
 GameObject:
   m_ObjectHideFlags: 0
@@ -248,6 +300,33 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
+--- !u!1 &1993542553
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1993542555}
+  m_Layer: 0
+  m_Name: GUI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1993542555
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1993542553}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -19.8434277, y: -7.92326546, z: 15.8364067}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
 --- !u!1 &2146826062
 GameObject:
   m_ObjectHideFlags: 0
@@ -313,7 +392,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2146826062}
   m_LocalRotation: {x: -.5, y: -.5, z: .5, w: .5}
-  m_LocalPosition: {x: -.439470887, y: 4.10228348, z: -3.39091396}
+  m_LocalPosition: {x: -.439470887, y: 41.988945, z: -3.39091396}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
