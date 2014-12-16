@@ -117,6 +117,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!1001 &5112728
 Prefab:
   m_ObjectHideFlags: 0
@@ -212,6 +214,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!1 &15276102
 GameObject:
   m_ObjectHideFlags: 0
@@ -2987,6 +2991,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!1001 &66638902
 Prefab:
   m_ObjectHideFlags: 0
@@ -3202,6 +3208,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!1 &81692295
 GameObject:
   m_ObjectHideFlags: 0
@@ -4900,6 +4908,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!1 &127224300
 GameObject:
   m_ObjectHideFlags: 0
@@ -6444,6 +6454,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!1001 &153188092
 Prefab:
   m_ObjectHideFlags: 0
@@ -8382,6 +8394,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!1 &191554946
 GameObject:
   m_ObjectHideFlags: 0
@@ -8489,6 +8503,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!1 &193258212
 GameObject:
   m_ObjectHideFlags: 0
@@ -8532,6 +8548,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!1 &199450843
 GameObject:
   m_ObjectHideFlags: 0
@@ -9073,6 +9091,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!1 &224787715
 GameObject:
   m_ObjectHideFlags: 0
@@ -11928,6 +11948,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!1001 &255356112
 Prefab:
   m_ObjectHideFlags: 0
@@ -12464,6 +12486,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!1 &288788197
 GameObject:
   m_ObjectHideFlags: 0
@@ -12936,6 +12960,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!1001 &306112138
 Prefab:
   m_ObjectHideFlags: 0
@@ -13237,6 +13263,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!1001 &326778694
 Prefab:
   m_ObjectHideFlags: 0
@@ -13462,6 +13490,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!1 &332685376
 GameObject:
   m_ObjectHideFlags: 0
@@ -15707,6 +15737,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!1 &386533296
 GameObject:
   m_ObjectHideFlags: 0
@@ -17258,6 +17290,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!1 &406987354
 GameObject:
   m_ObjectHideFlags: 0
@@ -18816,6 +18850,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!1 &423767149
 GameObject:
   m_ObjectHideFlags: 0
@@ -19919,6 +19955,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!1001 &434019650
 Prefab:
   m_ObjectHideFlags: 0
@@ -20006,6 +20044,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!1001 &442573328
 Prefab:
   m_ObjectHideFlags: 0
@@ -21183,6 +21223,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!1001 &542762496
 Prefab:
   m_ObjectHideFlags: 0
@@ -22394,6 +22436,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!1001 &549901968
 Prefab:
   m_ObjectHideFlags: 0
@@ -25357,7 +25401,7 @@ AudioSource:
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: 597622ec3e302964f992c53fa48105c0, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: .699999988
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -27119,6 +27163,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!1 &627498317
 GameObject:
   m_ObjectHideFlags: 0
@@ -27574,6 +27620,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!4 &649150137
 Transform:
   m_ObjectHideFlags: 0
@@ -27708,6 +27756,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!1 &657231579
 GameObject:
   m_ObjectHideFlags: 0
@@ -27815,6 +27865,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!1001 &659259629
 Prefab:
   m_ObjectHideFlags: 0
@@ -29054,6 +29106,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!1 &677414788
 GameObject:
   m_ObjectHideFlags: 0
@@ -29225,6 +29279,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!1001 &682674297
 Prefab:
   m_ObjectHideFlags: 0
@@ -38891,6 +38947,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!1 &922463567
 GameObject:
   m_ObjectHideFlags: 0
@@ -39192,6 +39250,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!1001 &945090509
 Prefab:
   m_ObjectHideFlags: 0
@@ -43188,6 +43248,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!1 &994511250
 GameObject:
   m_ObjectHideFlags: 0
@@ -43786,6 +43848,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!1 &1039640147
 GameObject:
   m_ObjectHideFlags: 0
@@ -43829,6 +43893,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!1 &1044232384
 GameObject:
   m_ObjectHideFlags: 0
@@ -46472,6 +46538,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!1001 &1071927501
 Prefab:
   m_ObjectHideFlags: 0
@@ -47029,6 +47097,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!1001 &1122100741
 Prefab:
   m_ObjectHideFlags: 0
@@ -47996,6 +48066,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!1 &1155653491
 GameObject:
   m_ObjectHideFlags: 0
@@ -49099,6 +49171,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!1001 &1162927300
 Prefab:
   m_ObjectHideFlags: 0
@@ -49635,6 +49709,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!1 &1189017953
 GameObject:
   m_ObjectHideFlags: 0
@@ -53004,6 +53080,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!1 &1285755693
 GameObject:
   m_ObjectHideFlags: 0
@@ -56152,6 +56230,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!1 &1386735908
 GameObject:
   m_ObjectHideFlags: 0
@@ -59081,6 +59161,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!1001 &1416825985
 Prefab:
   m_ObjectHideFlags: 0
@@ -59216,6 +59298,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!1001 &1437035079
 Prefab:
   m_ObjectHideFlags: 0
@@ -59571,6 +59655,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!4 &1442908291
 Transform:
   m_ObjectHideFlags: 0
@@ -59690,6 +59776,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!1001 &1455782333
 Prefab:
   m_ObjectHideFlags: 0
@@ -60706,6 +60794,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!1 &1497833734
 GameObject:
   m_ObjectHideFlags: 0
@@ -60749,6 +60839,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!1 &1500459453
 GameObject:
   m_ObjectHideFlags: 0
@@ -61020,6 +61112,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!1001 &1517305585
 Prefab:
   m_ObjectHideFlags: 0
@@ -61115,6 +61209,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!1001 &1523845127
 Prefab:
   m_ObjectHideFlags: 0
@@ -63246,6 +63342,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!1001 &1608964822
 Prefab:
   m_ObjectHideFlags: 0
@@ -67180,6 +67278,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!1 &1767402364
 GameObject:
   m_ObjectHideFlags: 0
@@ -69222,6 +69322,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!1 &1846391985
 GameObject:
   m_ObjectHideFlags: 0
@@ -69811,6 +69913,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!1001 &1877297458
 Prefab:
   m_ObjectHideFlags: 0
@@ -70528,6 +70632,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!4 &1926554376
 Transform:
   m_ObjectHideFlags: 0
@@ -70583,6 +70689,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!1 &1935968188
 GameObject:
   m_ObjectHideFlags: 0
@@ -71268,6 +71376,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!1 &1977212921
 GameObject:
   m_ObjectHideFlags: 0
@@ -71311,6 +71421,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!1001 &1981397284
 Prefab:
   m_ObjectHideFlags: 0
@@ -71466,6 +71578,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!1 &1990238800
 GameObject:
   m_ObjectHideFlags: 0
@@ -72073,6 +72187,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!1001 &2019436744
 Prefab:
   m_ObjectHideFlags: 0
@@ -72282,6 +72398,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!1 &2036477307
 GameObject:
   m_ObjectHideFlags: 0
@@ -72325,6 +72443,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!1 &2037095862
 GameObject:
   m_ObjectHideFlags: 0
@@ -72335,6 +72455,7 @@ GameObject:
   - 4: {fileID: 2037095865}
   - 114: {fileID: 2037095864}
   - 135: {fileID: 2037095863}
+  - 82: {fileID: 2037095866}
   m_Layer: 0
   m_Name: EnemyDespawn
   m_TagString: Untagged
@@ -72380,6 +72501,65 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
+--- !u!82 &2037095866
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: d4689559413efbe46b794243450ee3c9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1184971111}
+  m_GameObject: {fileID: 2037095862}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 86b9291e4efb7044b81dce02c5e573a6, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1001 &2043792911
 Prefab:
   m_ObjectHideFlags: 0
