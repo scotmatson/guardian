@@ -26,6 +26,19 @@ public class EnemyDestroy : MonoBehaviour {
             Instantiate(MyGameObject, other.transform.position, other.transform.rotation);
             AudioSource.PlayClipAtPoint(shipExplosion.clip, transform.position);
             Destroy(other.gameObject);
+
+
+            //Everytime an enemy despawner it attacks the base and health is lost
+            
+            
+            GameState.Health --;
+            if (GameState.Health <= 0)
+            {
+                GUI_Gameplay.GameIsOver = true; 
+            }
+            
+
+
         }
     }
 }

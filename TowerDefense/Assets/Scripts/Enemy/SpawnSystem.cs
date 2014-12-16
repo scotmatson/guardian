@@ -95,13 +95,24 @@ public class SpawnSystem : MonoBehaviour
         curWave++;
         //Increase the maximum number of enemies for this wave
         maxEnemies = curWave * 5;
+
+        //Set Wave in GameState
+        GameState.Wave = curWave;           
+   
+        //Gives Score + 100 for each wave
+        GameState.Score += 100;
+
         //Start the next wave
         StartCoroutine(SpawnEnemy());
     }
 
-    void OnGUI()
-    {
+
+
+    //MOVED ALL BELOW TO OTHER FILE
+
+  //  void OnGUI()
+    //{
         //Display the wave number in the top left corner of screen
-        UnityEngine.GUI.Label(new Rect(5, 5, 100, 30), "Wave " + curWave.ToString());
-    }
+        //UnityEngine.GUI.Label(new Rect(25, 15, 100, 30), "Wave " + curWave.ToString());
+    //}
 }

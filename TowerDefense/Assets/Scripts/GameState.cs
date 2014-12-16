@@ -5,11 +5,13 @@ using System.Collections;
 public class GameState : MonoBehaviour
 {
 
-    public static int Currency = 1000;
+    public static int Currency = 500;
     public static int Score = 0;
+
+    public static int Wave = 0;
+    public static int EnemyCount = 0;
+
     public static int LevelScore = 0;
-
-
 
     //Arbituray 5 right now
     public static int Health = 5;

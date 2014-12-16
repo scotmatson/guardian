@@ -47475,6 +47475,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: c6ae419e917ada64da2b5de8244a5075, type: 2}
+      propertyPath: skin
+      value: 
+      objectReference: {fileID: 11400000, guid: fdc6ad1a4d4d042c39d11e0fc33f7def,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c6ae419e917ada64da2b5de8244a5075, type: 2}
   m_RootGameObject: {fileID: 1644538063}
@@ -63998,7 +64003,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7a6a78e8a441354e84006bf426cf3b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skin: {fileID: 0}
+  skin: {fileID: 11400000, guid: fdc6ad1a4d4d042c39d11e0fc33f7def, type: 2}
   TurretMenu: 0
   GamePaused: 0
   _hudDisplay:
