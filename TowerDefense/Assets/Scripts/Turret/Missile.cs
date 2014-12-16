@@ -10,6 +10,9 @@ public class Missile : MonoBehaviour {
 
     public bool InPursuit;
 
+    //This is used to set a particle effect upon explosion of the missile
+    public GameObject MyGameObject;
+
     AudioSource missileAudio;
 
     // Use this for initialization
@@ -58,6 +61,7 @@ public class Missile : MonoBehaviour {
              other.gameObject.SendMessage("DoDamage",3);
              
              //Destroy the Missile
+             Instantiate(MyGameObject, gameObject.transform.position, gameObject.transform.rotation);
              Destroy(gameObject);
          }
     }

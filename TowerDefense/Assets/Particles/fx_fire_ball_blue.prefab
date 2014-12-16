@@ -81,7 +81,7 @@ ParticleSystem:
         m_PostInfinity: 2
       minMaxState: 0
     startSpeed:
-      scalar: .159999996
+      scalar: 0
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -198,7 +198,7 @@ ParticleSystem:
         rgba: 4294967295
       minMaxState: 0
     startSize:
-      scalar: 6
+      scalar: 9
       maxCurve:
         serializedVersion: 2
         m_Curve:

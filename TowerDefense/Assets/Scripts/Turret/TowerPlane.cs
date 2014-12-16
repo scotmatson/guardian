@@ -68,7 +68,7 @@ public class TowerPlane : MonoBehaviour
         //No Longer has tower
         HasTower = false;
 
-        GameState.Currency += Utils.TowerCost(_currentType);
+        GameState.Currency += Utils.TowerCost(_currentType) / 2;
     }
 
     void OnMouseOver()
@@ -79,7 +79,7 @@ public class TowerPlane : MonoBehaviour
             //Can Afford and there is no previous tower
             if (Utils.CanAfford() && !HasTower)
             {
-                Debug.Log("Build");
+                //Debug.Log("Build");
                 BuildTowerOnPlane();
                 HasTower = true;
             }
@@ -101,7 +101,7 @@ public class TowerPlane : MonoBehaviour
         {
             Debug.Log("Prompt Delete");
 
-            var creditBack = Utils.TowerCost(_currentType);
+            var creditBack = Utils.TowerCost(_currentType) / 2;
 
             //
             UnityEngine.GUI.Box(_deleteConfirmRect, "Delete for " + creditBack + " credit back?");
