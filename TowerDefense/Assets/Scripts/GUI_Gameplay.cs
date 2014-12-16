@@ -6,8 +6,14 @@ using System.Collections;
 
 public class GUI_Gameplay : MonoBehaviour
 {
+
+    public GUISkin skin;
+
     public bool TurretMenu;
     public bool GamePaused;
+
+    public Rect _hudDisplay;
+
 
     private Texture2D _turret1texture2D;
     private Texture2D _turret2Texture2D;
@@ -56,7 +62,15 @@ public class GUI_Gameplay : MonoBehaviour
 
         _pauseMenuRect = new Rect(pauseX,pauseY,pauseWidth,pauseHeight);
 
-       
+
+
+        var hud_x = 10F;
+        var hud_y = 10F;
+        var hudHeight = 300F;
+        var hudWidth = 80;
+
+        _hudDisplay = new Rect(hud_x, hud_y, hudWidth, hudHeight);
+
     }
 	
 	// Update is called once per frame
@@ -94,7 +108,15 @@ public class GUI_Gameplay : MonoBehaviour
         return ActiveTurret.Contains(clickedOnScreen);
     }
 
-    void OnGUI() {
+    void OnGUI()
+    {
+
+        GUI.skin = skin;
+        
+
+
+        RenderHUD();
+
         if (GamePaused) {
             _pauseMenuRect = UnityEngine.GUI.Window(2, _pauseMenuRect, PauseMenu, "");
         }
@@ -102,7 +124,9 @@ public class GUI_Gameplay : MonoBehaviour
         //Active Turret
         UnityEngine.GUI.DrawTexture(ActiveTurret,ActiveTurretTexture2D);
 
-        if (TurretMenu) {
+        if (TurretMenu)
+        {
+            GUI.skin = null;
             //Turret Menu stuff
             UnityEngine.GUI.DrawTexture(Turret1Rect, _turret1texture2D);
             UnityEngine.GUI.DrawTexture(Turret2Rect, _turret2Texture2D);
@@ -150,25 +174,65 @@ public class GUI_Gameplay : MonoBehaviour
         GUILayout.BeginVertical();
         GUILayout.Label("Paused");
 
-        if (GUILayout.Button("Unpause")) {
+        if (GUILayout.Button("Unpause",skin.FindStyle("Button"))) {
             UnPause();
         }
 
-        if (GUILayout.Button("Restart Level")) {
+        if (GUILayout.Button("Restart Level", skin.FindStyle("Button")))
+        {
           //  UnPause();
           //Sets the Scene to Current Level Index
           // ResetConfigLevel();
-          // RestartLevel();
+          RestartLevel();
         }
 
-        if (GUILayout.Button("Main Menu")) {
-          //   UnPause();
+        if (GUILayout.Button("Main Menu", skin.FindStyle("Button")))
+        {
+             UnPause();
           //Go to the Main Menu
-          //   MainMenu();
+             MainMenu();
         }
 
         //GUILayout.Space(8);
         GUILayout.EndVertical();
-        //GUI.DragWindow(new Rect(0, 0, 10000, 10000));
+        GUI.DragWindow(new Rect(0, 0, 10000, 10000));
     }
+
+    private void RestartLevel()
+    {
+        Application.LoadLevel(Application.loadedLevel);
+    }
+
+    private void MainMenu()
+    {
+        Application.LoadLevel(0);
+    }
+
+    //Game HUD
+
+    void RenderHUD()
+    {
+
+
+        var health = GameState.Health;
+        var score = GameState.Score;
+
+        GUI.Box(_hudDisplay, "");
+
+        var healthRect = _hudDisplay;
+        healthRect.x += 10;
+        healthRect.y += 20;
+        healthRect.width = _hudDisplay.width / 2;
+        GUI.Label(healthRect, "Health: " + health);
+
+        var scoreRect = _hudDisplay;
+        //scoreRect.x += (_hudDisplay.width / 2);
+        scoreRect.y += 20;
+        scoreRect.width = _hudDisplay.width / 2;
+        GUI.Label(scoreRect, "Score: " + score);
+    }
+
+
+
+
 }
