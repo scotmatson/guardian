@@ -10,7 +10,6 @@ public  class Utils : MonoBehaviour {
     public static GameObject Turret_Missle = Resources.Load<GameObject>("Turrets/MissilePrefab");
     public static GameObject Turret_Beam = Resources.Load<GameObject>("Turrets/BeamPrefab");
 
-
     //Returns the Postion in the Gameworld where mouse input is given
     public static Vector3 GetTargetPosition(Vector3 mouseInput) {
         var ray = Camera.main.ScreenPointToRay(mouseInput);
@@ -58,7 +57,7 @@ public  class Utils : MonoBehaviour {
     }
 
     public static bool CanAfford() {
-      return GameState.Currency >= Utils.TowerCost(GameState.CurrenTowerType);
+      return GameState.Currency >= Utils.TowerCost(GameState.CurrentTowerType);
     }
 
 
