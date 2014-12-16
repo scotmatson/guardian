@@ -6,11 +6,12 @@ public class EnemyState : MonoBehaviour
 
     public int  Health;
     public GameObject MyGameObject;
+    AudioSource shipExplode;
 
 	// Use this for initialization
 	void Start ()
 	{
-
+        shipExplode = GetComponent<AudioSource>();
 	    Health = (Health == 0) ? 5 : Health;
 
 	}
@@ -28,6 +29,7 @@ public class EnemyState : MonoBehaviour
         if (Health <= 0)
         {
             Instantiate(MyGameObject, gameObject.transform.position, gameObject.transform.rotation);
+            AudioSource.PlayClipAtPoint(shipExplode.clip, transform.position);
             Destroy(gameObject);
         }
 
