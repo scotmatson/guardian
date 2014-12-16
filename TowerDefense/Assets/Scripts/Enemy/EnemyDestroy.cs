@@ -4,9 +4,11 @@ using System.Collections;
 public class EnemyDestroy : MonoBehaviour {
 
     public GameObject MyGameObject;
+    AudioSource shipExplosion;
 
 	// Use this for initialization
 	void Start () {
+        shipExplosion = GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
@@ -22,6 +24,7 @@ public class EnemyDestroy : MonoBehaviour {
             //Not very resuseable since you have to drag objects from the editor - but this will cause
             //an explosion particle effect at the point of impact with a ship. Cool!
             Instantiate(MyGameObject, other.transform.position, other.transform.rotation);
+            AudioSource.PlayClipAtPoint(shipExplosion.clip, transform.position);
             Destroy(other.gameObject);
         }
     }
