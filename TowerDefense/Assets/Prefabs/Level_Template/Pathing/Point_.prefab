@@ -42,6 +42,8 @@ MonoBehaviour:
   width: .200000003
   height: .200000003
   depth: .200000003
+  accelerate: 0
+  speedMultiplier: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
