@@ -5,6 +5,7 @@ public class EnemyState : MonoBehaviour
 {
 
     public int  Health;
+    public GameObject MyGameObject;
 
 	// Use this for initialization
 	void Start ()
@@ -26,6 +27,7 @@ public class EnemyState : MonoBehaviour
 
         if (Health <= 0)
         {
+            Instantiate(MyGameObject, gameObject.transform.position, gameObject.transform.rotation);
             Destroy(gameObject);
         }
 

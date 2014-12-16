@@ -3,6 +3,7 @@ using System.Collections;
 
 public class EnemyDestroy : MonoBehaviour {
 
+    public GameObject MyGameObject;
 
 	// Use this for initialization
 	void Start () {
@@ -10,7 +11,6 @@ public class EnemyDestroy : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
 	}
 
     void OnTriggerEnter(Collider other)
@@ -19,6 +19,9 @@ public class EnemyDestroy : MonoBehaviour {
         //base should take damage
         if (other.gameObject.tag == "Enemy")
         {
+            //Not very resuseable since you have to drag objects from the editor - but this will cause
+            //an explosion particle effect at the point of impact with a ship. Cool!
+            Instantiate(MyGameObject, other.transform.position, other.transform.rotation);
             Destroy(other.gameObject);
         }
     }
