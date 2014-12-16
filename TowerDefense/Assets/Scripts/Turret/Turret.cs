@@ -26,6 +26,7 @@ public class Turret : MonoBehaviour
 	    if (_currentTarget != null && IsCloseEnough())
 	    {
 	        RotateTowardsObject(_currentTarget);
+
 	    }
 	    else
 	    {

@@ -7,10 +7,13 @@ public class Bullet : MonoBehaviour
 
     public float Speed;
 
+    AudioSource twinBullet;
+
 	// Use this for initialization
 	void Start ()
 	{
-
+        twinBullet = GetComponent<AudioSource>();
+        AudioSource.PlayClipAtPoint(twinBullet.clip, transform.position);
 	    Speed = (Speed == 0) ? .5f : Speed;
 
 	}

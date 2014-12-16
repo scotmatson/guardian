@@ -10,10 +10,14 @@ public class Missile : MonoBehaviour {
 
     public bool InPursuit;
 
+    AudioSource missileAudio;
+
     // Use this for initialization
     void Start()
     {
-
+        //Loads and plays audio on instantiate of a rocket
+        missileAudio = GetComponent<AudioSource>();
+        AudioSource.PlayClipAtPoint(missileAudio.clip, transform.position);
         Speed = (Speed == 0) ? Speed = 20 : Speed;
 
     }
