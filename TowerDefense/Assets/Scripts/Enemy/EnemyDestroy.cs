@@ -23,6 +23,19 @@ public class EnemyDestroy : MonoBehaviour {
             //an explosion particle effect at the point of impact with a ship. Cool!
             Instantiate(MyGameObject, other.transform.position, other.transform.rotation);
             Destroy(other.gameObject);
+
+
+            //Everytime an enemy despawner it attacks the base and health is lost
+            
+            
+            GameState.Health --;
+            if (GameState.Health <= 0)
+            {
+                GUI_Gameplay.GameIsOver = true; 
+            }
+            
+
+
         }
     }
 }

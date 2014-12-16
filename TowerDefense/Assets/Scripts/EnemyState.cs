@@ -28,6 +28,12 @@ public class EnemyState : MonoBehaviour
 
         if (Health <= 0)
         {
+            //Gives 50 Credit
+            GameState.Currency += 50;
+
+            //
+            GameState.Score += 50;
+
             Instantiate(MyGameObject, gameObject.transform.position, gameObject.transform.rotation);
             AudioSource.PlayClipAtPoint(shipExplode.clip, transform.position);
             Destroy(gameObject);
