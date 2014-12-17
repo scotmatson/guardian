@@ -102,7 +102,7 @@ public class GUI_Gameplay : MonoBehaviour
 
         //TOggle the Turrts now
 
-	    if (Input.GetMouseButton(0))
+	    if (Input.GetMouseButtonDown(0))
 	    {
 	        if (CurrentTurretClicked())
 	        {
@@ -259,7 +259,7 @@ public class GUI_Gameplay : MonoBehaviour
 
     private void MainMenu()
     {
-        ResetConfig();
+        ResetConfig();    
         Application.LoadLevel(0);
     }
 
@@ -304,6 +304,10 @@ public class GUI_Gameplay : MonoBehaviour
         
         //
         GameIsOver = false;
+
+        //Unpause the Game
+        UnPause();
+
     }
 
 
