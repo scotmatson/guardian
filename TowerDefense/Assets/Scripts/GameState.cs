@@ -8,7 +8,7 @@ public class GameState : MonoBehaviour
     public static int Currency = 300;
     public static int Score = 0;
 
-    public static int Wave = 0;
+    public static int Wave = 1;
     public static int EnemyCount = 0;
 
     public static int LevelScore = 0;

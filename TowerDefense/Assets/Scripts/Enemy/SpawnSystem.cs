@@ -111,10 +111,7 @@ public class SpawnSystem : MonoBehaviour
 
         //Set Wave in GameState
         GameState.Wave = curWave;           
-   
-        //Gives Score + 100 for each wave
-        GameState.Score += 100;
-
+  
         //Every 5 waves make enemy stronger
         if (curWave%5 == 0)
         {

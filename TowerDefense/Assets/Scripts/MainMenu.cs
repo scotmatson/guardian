@@ -42,7 +42,26 @@ public class MainMenu : MonoBehaviour
 
     void PlayGame()
     {
+        SetConfig();
         Application.LoadLevel(SelectedLevel);
+    }
+
+    void SetConfig()
+    {
+        if (SelectedLevel == 2)
+        {
+            GameState.Currency = 500;
+        }
+        else
+        {
+            GameState.Currency = 300;
+        }
+
+        GameState.Score = 0;
+        GameState.Wave = 0;
+        GameState.Health = 10;
+        
+
     }
 
  

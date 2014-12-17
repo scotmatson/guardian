@@ -42,7 +42,7 @@ public class EnemyPath : MonoBehaviour {
             transform.position = Vector3.MoveTowards(currentPosition, nextPosition, travelSpeed * Time.deltaTime);
 
             //Position 1 second later
-            predictedPos = Vector3.MoveTowards(currentPosition, nextPosition, travelSpeed*Time.deltaTime + 1);
+            predictedPos = Vector3.MoveTowards(currentPosition, nextPosition, travelSpeed*Time.deltaTime + 2f);
 
         }
         if (currentPosition == nextPosition && wpNum < waypoints.Length - 1) {

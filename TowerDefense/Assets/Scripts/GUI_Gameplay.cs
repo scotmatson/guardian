@@ -297,15 +297,69 @@ public class GUI_Gameplay : MonoBehaviour
             Application.Quit();
         }
 
+
+        GUILayout.Space(8);
+
+        GUILayout.Label("Your Score: " + GameState.Score,skin.FindStyle("Label"));
+
+        var highScore = RecordReturnScore();
+        GUILayout.Label("High Score: " + highScore, skin.FindStyle("Label"));
+
+
+        GUILayout.Space(8);
+
+        GUILayout.Label("Your Wave: " + GameState.Wave, skin.FindStyle("Label"));
+
+        var highWave = RecordReturnHighWave();
+        GUILayout.Label("Level Wave High: " + highWave, skin.FindStyle("Label"));
+
+
         //GUILayout.Space(8);
         GUILayout.EndVertical();
         GUI.DragWindow(new Rect(0, 0, 10000, 10000));
     }
 
 
+    int RecordReturnScore()
+    {
+        //Each level has a high score
+        var currentLevel = "Level_" + Application.loadedLevel + "HighScore";
+
+        var highScore = PlayerPrefs.GetInt(currentLevel, 0);
+
+        if (GameState.Score > highScore)
+        {
+            highScore = GameState.Score;
+            PlayerPrefs.SetInt(currentLevel, highScore);
+        }
+
+        return highScore;
+    }
+
+    int RecordReturnHighWave()
+    {
+        var currentLevel = "Level_" + Application.loadedLevel + "Wave";
+
+        var highWave = PlayerPrefs.GetInt(currentLevel, 0);
+
+        if (GameState.Wave > highWave)
+        {
+            highWave = GameState.Wave;
+            PlayerPrefs.SetInt(currentLevel,highWave);
+        }
+
+        return highWave;
+    }
+
     void ResetConfig()
     {
         GameState.Currency = 300;
+
+        if (Application.loadedLevel == 2)
+        {
+            GameState.Currency = 500;
+        }
+
         GameState.Score = 0;
         GameState.Wave = 0;
         GameState.Health = 10;
