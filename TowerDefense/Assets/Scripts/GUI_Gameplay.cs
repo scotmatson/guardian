@@ -362,6 +362,18 @@ public class GUI_Gameplay : MonoBehaviour
 
         GUI.Label(currencyRect,"$" + currency);
 
+
+        ///Going to stick Turret cost here
+
+        //Get the Rect position
+        var costRect = ActiveTurret;
+
+        costRect.x += 10;
+        costRect.y += costRect.height - 20;
+
+        GUI.Label(costRect,"Cost: " + Utils.TowerCost(GameState.CurrentTowerType));
+
+
     }
 
 
