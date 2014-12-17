@@ -269,11 +269,12 @@ public class GUI_Gameplay : MonoBehaviour
         GUILayout.Label("Game Over");
 
 
+        Pausegame();
+
         if (GUILayout.Button("Restart Level", skin.FindStyle("Button")))
         {
             //  UnPause();
             //Sets the Scene to Current Level Index
-            // ResetConfigLevel();
             RestartLevel();
         }
 
