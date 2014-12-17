@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Runtime.InteropServices.ComTypes;
+using UnityEngine;
 using System.Collections;
 
 public class SpawnSystem : MonoBehaviour
@@ -31,6 +32,7 @@ public class SpawnSystem : MonoBehaviour
 
 
     private int EnemyHealth;
+    private int EnemySpeed;
 
     void Start()
     {
@@ -40,6 +42,7 @@ public class SpawnSystem : MonoBehaviour
         StartCoroutine(SpawnEnemy());
 
         EnemyHealth = 5;
+        EnemySpeed = 6;
 
     }
 
@@ -116,6 +119,14 @@ public class SpawnSystem : MonoBehaviour
         if (curWave%5 == 0)
         {
             EnemyHealth += 2;
+
+            //Put this inside mod 5 since mod is expensive this makes the happen less often.
+            if (curWave%10 == 0)
+            {
+                EnemySpeed *= 2;
+            }
+
+
         }
 
         //Start the next wave
