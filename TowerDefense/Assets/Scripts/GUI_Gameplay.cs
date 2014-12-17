@@ -1,8 +1,4 @@
-﻿using System;
-using System.IO;
-using System.Xml.Schema;
-using UnityEditor;
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 
 public class GUI_Gameplay : MonoBehaviour
