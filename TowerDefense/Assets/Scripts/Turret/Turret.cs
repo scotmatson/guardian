@@ -73,7 +73,12 @@ public class Turret : MonoBehaviour
     //Rotates the Turret Towads a target 
     void RotateTowardsObject(GameObject target)
     {
-        var targetRotation = Quaternion.LookRotation(target.transform.position - transform.position);
+
+        //Gets the predicted location from the target
+        var predictedLocation = target.GetComponent<EnemyPath>().predictedPos;//transform.position;
+
+        var targetRotation = Quaternion.LookRotation(predictedLocation - transform.position);
+
         transform.rotation = targetRotation;
     }
 
