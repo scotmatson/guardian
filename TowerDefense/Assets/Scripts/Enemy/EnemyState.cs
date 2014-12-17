@@ -29,7 +29,7 @@ public class EnemyState : MonoBehaviour
         if (Health <= 0)
         {
             //Gives 50 Credit
-            GameState.Currency += 50;
+            GameState.Currency += 25;
 
             //
             GameState.Score += 50;

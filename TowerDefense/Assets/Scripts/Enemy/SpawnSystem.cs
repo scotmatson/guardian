@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Runtime.InteropServices.ComTypes;
+using UnityEngine;
 using System.Collections;
 
 public class SpawnSystem : MonoBehaviour
@@ -29,12 +30,20 @@ public class SpawnSystem : MonoBehaviour
     //The selected spawn point (Random angle and distance from target)
     private Vector3 spawnPoint;
 
+
+    private int EnemyHealth;
+    private int EnemySpeed;
+
     void Start()
     {
         //Find what the height of the enemy's CharacterContoller component is
         enemyHeight = enemyPrefab.GetComponent<CharacterController>().height;
         //Begin the first wave
         StartCoroutine(SpawnEnemy());
+
+        EnemyHealth = 5;
+        EnemySpeed = 6;
+
     }
 
     void Update()
@@ -64,7 +73,11 @@ public class SpawnSystem : MonoBehaviour
             //Find a random spawn point
             FindSpawnPoint(Random.Range(spawnRadiusMin, spawnRadiusMax), Random.Range(0, 359));
             //Spawn an enemy at the random spawn point
-            Instantiate(enemyPrefab, spawnPoint, transform.rotation);
+            var newEnemy = (GameObject) Instantiate(enemyPrefab, spawnPoint, transform.rotation);
+
+            //Give the enemy its health
+            newEnemy.GetComponent<EnemyState>().Health = EnemyHealth;
+
         }
         //Tell script that we are finished spawning enemies for this round
         isSpawning = false;
@@ -101,6 +114,20 @@ public class SpawnSystem : MonoBehaviour
    
         //Gives Score + 100 for each wave
         GameState.Score += 100;
+
+        //Every 5 waves make enemy stronger
+        if (curWave%5 == 0)
+        {
+            EnemyHealth += 2;
+
+            //Put this inside mod 5 since mod is expensive this makes the happen less often.
+            if (curWave%10 == 0)
+            {
+                EnemySpeed *= 2;
+            }
+
+
+        }
 
         //Start the next wave
         StartCoroutine(SpawnEnemy());

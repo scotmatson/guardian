@@ -8,6 +8,8 @@ public class EnemyPath : MonoBehaviour {
     private Transform[] waypoints;
     private Vector3 currentPosition;
 
+    public Vector3 predictedPos;
+
     //The travel speed of the game object
     public float travelSpeed = 1.0f;
     //The rotational speed of game object
@@ -38,6 +40,10 @@ public class EnemyPath : MonoBehaviour {
             transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * rotationalSpeed);
             //Moves enemy towards next waypoint
             transform.position = Vector3.MoveTowards(currentPosition, nextPosition, travelSpeed * Time.deltaTime);
+
+            //Position 1 second later
+            predictedPos = Vector3.MoveTowards(currentPosition, nextPosition, travelSpeed*Time.deltaTime + 1);
+
         }
         if (currentPosition == nextPosition && wpNum < waypoints.Length - 1) {
             ++wpNum;
