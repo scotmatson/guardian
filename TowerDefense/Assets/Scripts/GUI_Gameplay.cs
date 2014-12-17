@@ -31,6 +31,9 @@ public class GUI_Gameplay : MonoBehaviour
     public Rect ActiveTurret;
     public Texture2D ActiveTurretTexture2D;
 
+    private float SliderValue;
+    private float prevSpeed;
+
 
     void Awake()
     {
@@ -74,14 +77,17 @@ public class GUI_Gameplay : MonoBehaviour
 
         var hud_x = 10F;
         var hud_y = 10F;
-        var hudHeight = 150F;
+        var hudHeight = 180F;
         var hudWidth = 110;
 
         _hudDisplay = new Rect(hud_x, hud_y, hudWidth, hudHeight);
 
 
+        SliderValue = 1.0f;
+        prevSpeed = SliderValue;
 
     }
+
 	
 	// Update is called once per frame
 	void Update () {
@@ -214,7 +220,12 @@ public class GUI_Gameplay : MonoBehaviour
 
 
     void UnPause() {
-        Time.timeScale = 1;
+
+
+        //Time.timeScale = 1;
+
+        Time.timeScale = SliderValue;
+        
         GamePaused = false;
 
         //Can do Music Here
@@ -306,6 +317,9 @@ public class GUI_Gameplay : MonoBehaviour
         //
         GameIsOver = false;
 
+        //
+        SliderValue = 1.0f;
+
         //Unpause the Game
         UnPause();
 
@@ -362,6 +376,28 @@ public class GUI_Gameplay : MonoBehaviour
 
         GUI.Label(currencyRect,"$" + currency);
 
+        var timeLabelRect = _hudDisplay;
+        timeLabelRect.x += 15;
+        timeLabelRect.y = currencyRect.y + 25;
+        timeLabelRect.width = 100;
+        timeLabelRect.height = 30;
+
+        GUI.Label(timeLabelRect,"Game Speed");
+
+        var timeSliderRect = _hudDisplay;
+        timeSliderRect.x += 5;
+        timeSliderRect.y += timeLabelRect.y + 10;
+        timeSliderRect.width = 100;
+        timeSliderRect.height = 30;
+
+        SliderValue =  GUI.HorizontalSlider(timeSliderRect, SliderValue, 1f, 2f);
+
+        if (prevSpeed != SliderValue)
+        {
+            UpdateSpeed();
+            prevSpeed = SliderValue;
+        }
+        
 
         ///Going to stick Turret cost here
 
@@ -377,6 +413,9 @@ public class GUI_Gameplay : MonoBehaviour
     }
 
 
-
+    void UpdateSpeed()
+    {
+        Time.timeScale = SliderValue;
+    }
 
 }
