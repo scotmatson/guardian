@@ -29,12 +29,18 @@ public class SpawnSystem : MonoBehaviour
     //The selected spawn point (Random angle and distance from target)
     private Vector3 spawnPoint;
 
+
+    private int EnemyHealth;
+
     void Start()
     {
         //Find what the height of the enemy's CharacterContoller component is
         enemyHeight = enemyPrefab.GetComponent<CharacterController>().height;
         //Begin the first wave
         StartCoroutine(SpawnEnemy());
+
+        EnemyHealth = 5;
+
     }
 
     void Update()
@@ -64,7 +70,11 @@ public class SpawnSystem : MonoBehaviour
             //Find a random spawn point
             FindSpawnPoint(Random.Range(spawnRadiusMin, spawnRadiusMax), Random.Range(0, 359));
             //Spawn an enemy at the random spawn point
-            Instantiate(enemyPrefab, spawnPoint, transform.rotation);
+            var newEnemy = (GameObject) Instantiate(enemyPrefab, spawnPoint, transform.rotation);
+
+            //Give the enemy its health
+            newEnemy.GetComponent<EnemyState>().Health = EnemyHealth;
+
         }
         //Tell script that we are finished spawning enemies for this round
         isSpawning = false;
@@ -101,6 +111,12 @@ public class SpawnSystem : MonoBehaviour
    
         //Gives Score + 100 for each wave
         GameState.Score += 100;
+
+        //Every 5 waves make enemy stronger
+        if (curWave%5 == 0)
+        {
+            EnemyHealth += 2;
+        }
 
         //Start the next wave
         StartCoroutine(SpawnEnemy());
