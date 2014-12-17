@@ -50,7 +50,7 @@ public  class Utils : MonoBehaviour {
           case TowerType.Beam:
             return 150;
           case TowerType.Missile:
-            return 200;
+            return 500;
 
         }
         return 0;

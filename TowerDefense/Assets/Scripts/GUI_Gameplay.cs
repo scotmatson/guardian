@@ -297,10 +297,10 @@ public class GUI_Gameplay : MonoBehaviour
 
     void ResetConfig()
     {
-        GameState.Currency = 500;
+        GameState.Currency = 300;
         GameState.Score = 0;
         GameState.Wave = 0;
-        GameState.Health = 5;
+        GameState.Health = 10;
         
         //
         GameIsOver = false;

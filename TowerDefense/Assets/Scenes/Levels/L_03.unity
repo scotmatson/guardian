@@ -19220,7 +19220,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e8876edec0953eb459ed8625c5856b1d, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: e8876edec0953eb459ed8625c5856b1d, type: 2}
       propertyPath: spawnHeightOffset
@@ -56595,7 +56595,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0f9b7bff0d0ebf540b484b1fcbc2d380, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 0f9b7bff0d0ebf540b484b1fcbc2d380, type: 2}
       propertyPath: spawnHeightOffset
@@ -62476,7 +62476,7 @@ ParticleSystem:
         m_PostInfinity: 2
       minMaxState: 0
     startSpeed:
-      scalar: .159999996
+      scalar: 0
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -62593,7 +62593,7 @@ ParticleSystem:
         rgba: 4294967295
       minMaxState: 0
     startSize:
-      scalar: 6
+      scalar: 9
       maxCurve:
         serializedVersion: 2
         m_Curve:
